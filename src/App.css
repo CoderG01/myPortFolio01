@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menuToggle {
+  transition: 0.4s all;
+}
+
+.menuToggle span {
+  width: 80%;
+  height: 3px;
+  background: black;
+  transition: 0.4s all;
+}
+
+.closeMenu .menuToggleSpan:nth-child(1) {
+  transform: rotate(133deg);
+  transform-origin: 13px 4px;
+}
+
+.closeMenu .menuToggleSpan:nth-child(2) {
+  transform: rotate(224deg);
+  transform-origin: 14px 0px;
+}
+
+span {
+  font-size: 3rem;
+}
+
+.menuItem{
+  position: relative;
+}
+.menuItem::before{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height:0;
+  z-index: -1;
+}
+.menuItem::after{
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 0;
+  height:0;
+  z-index: -1;
+}
+.menuItem:hover::before{
+  transition: 0.4s all;
+  background: black;
+  width: 50%;
+  height: 1px;
+}
+.menuItem:hover::after{
+  transition: 0.4s all;
+  width: 50%;
+  height: 1px;
+  background: black;
+}
+
+#logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo path{
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 8s  ease forwards;
+}
+/* 
+#logo path:nth-child(2){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 8s  ease forwards;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 8s  ease forwards;
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 8s  ease forwards;
+}
+#logo path:nth-child(5){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 8s  ease forwards;
+} */
+/* #logo path:nth-child(6){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 5s  ease forwards infinite;
+}
+#logo path:nth-child(7){
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: lineAnim 5s  ease forwards infinite;
+} */
+
+@keyframes lineAnim {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+.ContactUsHeader{
+  background-image: url('https://assets-global.website-files.com/6218605145a2e6339ee94d62/62186df93d37f799b8329c73_banner-title-area-bg.jpg');
+  background-size: cover;
+  /* background-position: 50%; */
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+input,
+textarea,
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
+.formInput:focus-visible{
+  outline: none;
+}
