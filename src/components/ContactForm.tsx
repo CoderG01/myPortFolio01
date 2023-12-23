@@ -68,8 +68,8 @@ const ContactForm = () => {
           );
         })}
       </div>
-      {/* <div className="flex justify-center items-center mt-8 group rounded-full border-[1px] border-solid border-[#2d2302] w-[120px] h-[120px] mx-auto"> */}
-      {/* {currentStep === 4 ? (
+      <div className="flex justify-center items-center mt-8 group rounded-full border-[1px] border-solid border-[#2d2302] w-[120px] h-[120px] mx-auto">
+        {currentStep === 4 ? (
           <button
             type="submit"
             onClick={() => {
@@ -87,8 +87,8 @@ const ContactForm = () => {
           >
             Next Step
           </button>
-        )} */}
-      {/* </div> */}
+        )}
+      </div>
       {/* </form> */}
     </div>
   );

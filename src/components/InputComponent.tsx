@@ -18,14 +18,14 @@ const InputComponent = ({
           onChange={handleChange}
         />
       </div>
-      <div className="flex justify-center items-center mt-8 group rounded-full border-[1px] border-solid border-[#2d2302] w-[120px] h-[120px] mx-auto">
+      {/* <div className="flex justify-center items-center mt-8 group rounded-full border-[1px] border-solid border-[#2d2302] w-[120px] h-[120px] mx-auto">
         <button
           type="submit"
           className="bg-black text-white w-[100px] h-[100px] rounded-full group-hover:w-[120px] group-hover:h-[120px] transition-[0.3]"
         >
           Next Step
         </button>
-      </div>
+      </div> */}
     </form>
   );
 };

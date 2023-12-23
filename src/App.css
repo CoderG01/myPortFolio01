@@ -127,7 +127,7 @@ span {
   background-repeat: no-repeat;
   object-fit: cover;
 }
-input,
+/* input,
 textarea,
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
@@ -136,4 +136,4 @@ input::-webkit-input-placeholder {
 }
 .formInput:focus-visible{
   outline: none;
-}
+} */

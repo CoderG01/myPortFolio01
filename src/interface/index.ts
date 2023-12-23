@@ -6,9 +6,9 @@ interface MenuListTypes {
     // icon: string;
   }
 
-interface InputComponentType {
-  type:string;
-  placeHolder:string;
-  handleChange:any;
-  onsubmit:any
-}
+  interface InputComponentType {
+    type:string;
+    placeHolder:string;
+    handleChange:any;
+    onsubmit:any
+  }
