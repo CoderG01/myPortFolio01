@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import SocialMedia from "./SocialMedia";
+import SocialMedia from "./SocialMedia";
 
 const HeroSection = () => {
   const [currentGreet, setCurrentGreet] = useState<number>(0);
@@ -39,12 +39,12 @@ const HeroSection = () => {
         A creative Font end developer, with a specialization in Frontend
         Development. Making pretty, useful things for people to use.
       </p>
-      {/* <div className="mt-3 block">
-          <SocialMedia />
-        </div>
-        <button className="mt-6 w-[120px] h-[36px] border-[1px] border-black bg-[#f1f1f1] hover:shadow-[4px_4px_0px_black] shadow-[0px_0px_0px_black] rounded-md transition-[4]">
-          Se My Projects
-        </button> */}
+      <div className="mt-3 block">
+        <SocialMedia />
+      </div>
+      {/* <button className="mt-6 w-[120px] h-[36px] border-[1px] border-black bg-[#f1f1f1] hover:shadow-[4px_4px_0px_black] shadow-[0px_0px_0px_black] rounded-md transition-[4]">
+        Se My Projects
+      </button> */}
     </div>
   );
 };

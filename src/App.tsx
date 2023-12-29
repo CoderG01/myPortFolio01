@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const fakeAsyncOperation = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      await new Promise((resolve) => setTimeout(resolve, 6000));
       setIsLoading(false);
     };
     fakeAsyncOperation();
